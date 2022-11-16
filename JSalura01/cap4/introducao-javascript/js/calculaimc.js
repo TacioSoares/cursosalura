@@ -18,13 +18,17 @@ for(var i = 0; i < pacientes.length ; i++){
         tdImc.textContent = "Peso inválido!";
         pesoEhValido = false;
         paciente.classList.add("paciente-invalido")
+        var erro = document.querySelector("#erro")
+        erro.innerHTML = 'Peso inválida'
     }
 
     if(altura <= 0 || altura >= 3.0){
         console.log("Altura inválida");
-        tdImc.textContent = "Altura inválida!";
+        tdImc.textContent += "Altura inválida!";
         alturaEhValida = false;
         paciente.classList.add("paciente-invalido")
+        var erro = document.querySelector("#erro")
+        erro.innerHTML += 'Altura inválida'
     }
 
     if(pesoEhValido && alturaEhValida){
