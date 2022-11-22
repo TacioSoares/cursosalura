@@ -20,7 +20,8 @@ function add(event) {
         form.reset()
         var erro = document.querySelector("#erro")
         erro.innerHTML = ""
-        adicionaOpcao()
+
+        // adicionaOpcao(paciente)
     }    
 }
 
@@ -84,6 +85,12 @@ function validapaciente(paciente) {
         return true
     }
 }
-function adicionaOpcao() {
-    
+/*
+function adicionaOpcao(paciente) {
+    var op = document.createElement('option')
+    op.setAttribute('value',`${paciente.nome}`)
+    op.innerHTML = paciente.nome
+    var selecao = document.querySelector("#iclientes")
+    selecao.appendChild(op)
 }
+*/

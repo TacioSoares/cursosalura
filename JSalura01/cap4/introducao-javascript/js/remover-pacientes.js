@@ -1,10 +1,10 @@
-var aluno1 = document.querySelector("#primeiro-paciente")
-aluno1.addEventListener("dblclick", remove)
 
-function remove() {
-    if (window.confirm('Deseja deletar?')) {
-        console.log('Removido')
-    } else {
-        console.log('De boa')
-    }
-}
+var tabela = document.querySelector("#tabela-pacientes")
+tabela.addEventListener("dblclick", function(event){
+    if (window.confirm(`Deseja realmente remover o paciente?`)) {
+        event.target.parentNode.classList.add("fadeOut")
+        setTimeout(function(){
+            event.target.parentNode.remove()
+        }, 650)   
+    }    
+})
