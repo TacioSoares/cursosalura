@@ -94,3 +94,9 @@ function adicionaOpcao(paciente) {
     selecao.appendChild(op)
 }
 */
+function adicionandoPacienteDoJSON(paciente) {
+    
+    var trpaciente = criaTreTd(paciente)
+    var tabela = document.querySelector("#tabela-pacientes")
+    tabela.appendChild(trpaciente)
+}

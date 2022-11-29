@@ -140,7 +140,7 @@ button[disabled=disabled], button:disabled {
 .paciente-invalido{
     background-color: lightcoral;
 }
-#erro {
+.erro {
 	color: red;
 	font-weight: bold;
 }
