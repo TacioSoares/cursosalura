@@ -9,7 +9,15 @@ cliente2.nome = "Alice";
 cliente2.cpf = 88822233309;
 
 const contaCorrenteRicardo = new ContaCorrente()
+contaCorrenteRicardo.cliente = cliente1
 
-var valorSacado = contaCorrenteRicardo.sacar(20)
+contaCorrenteAlice = new ContaCorrente()
+contaCorrenteAlice.cliente = cliente2
 
-console.log(`Foi efetuado um saque de R$ ${valorSacado}`)
+console.log(contaCorrenteAlice)
+console.log(contaCorrenteRicardo)
+
+contaCorrenteAlice.transferir(200,contaCorrenteRicardo)
+
+console.log(contaCorrenteAlice)
+console.log(contaCorrenteRicardo)

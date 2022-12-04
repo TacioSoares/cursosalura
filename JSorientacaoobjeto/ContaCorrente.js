@@ -1,5 +1,7 @@
 class ContaCorrente {
     agencia;
+    cliente;
+
     saldo = 1000
     
     sacar(valor){
@@ -7,7 +9,8 @@ class ContaCorrente {
             this.saldo -= valor
             return valor
         } else {
-            return console.log('Valor extrapola o saldo da conta')
+            console.log('Valor extrapola o saldo da conta')
+            return (false)
         }
     }
     depositar(valor) {
@@ -15,5 +18,12 @@ class ContaCorrente {
             this.saldo += valor
             console.log(this.saldo)
         }    
+    }
+    transferir(valor, conta) {
+        if(this.sacar(valor) == valor) {
+            conta.depositar(valor)
+        } else {
+            console.log('Saldo insuficiente')
+        }
     }
 }
