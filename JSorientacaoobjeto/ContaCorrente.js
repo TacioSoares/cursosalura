@@ -1,6 +1,8 @@
 class ContaCorrente {
+    static numeroDeContas = 0
     agencia;
     _cliente;
+    _saldo = 0
 
     sacar(valor){
         if(this._saldo >= valor) {
@@ -34,9 +36,15 @@ class ContaCorrente {
     get cliente() {
         return this._cliente
     }
-    _saldo = 1000
+    
     
     get saldo() {
         return this._saldo
+    }
+
+    constructor(agencia,cliente) {
+        this.agencia = agencia
+        this.cliente = cliente
+        ContaCorrente.numeroDeContas += 1
     }
 }

@@ -1,15 +1,10 @@
 
 
-const cliente1 = new Cliente()
-cliente1.nome = "Ricardo";
-cliente1.cpf = 11122233309;
+const cliente1 = new Cliente("Ricardo", 99933344490)
+const cliente2 = new Cliente("Alice", 55566677790)
+const contaCorrenteRicardo = new ContaCorrente(1001,cliente1)
 
-const contaCorrenteRicardo = new ContaCorrente()
-contaCorrenteRicardo.cliente = cliente1
-
-contaCorrenteAlice = new ContaCorrente()
-contaCorrenteAlice.cliente = cliente1
+contaCorrenteAlice = new ContaCorrente(1001, cliente2)
 
 
-
-console.log(contaCorrenteAlice.cliente)
+console.log(ContaCorrente.numeroDeContas)
