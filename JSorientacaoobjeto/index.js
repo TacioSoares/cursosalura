@@ -8,8 +8,8 @@ const contaCorrenteRicardo = new ContaCorrente()
 contaCorrenteRicardo.cliente = cliente1
 
 contaCorrenteAlice = new ContaCorrente()
-contaCorrenteAlice.cliente = new Cliente()
-contaCorrenteAlice.cliente.nome = 'Alice'
-contaCorrenteAlice.cliente.cpf = 88822233309
+contaCorrenteAlice.cliente = cliente1
 
-console.log(contaCorrenteAlice)
+
+
+console.log(contaCorrenteAlice.cliente)
