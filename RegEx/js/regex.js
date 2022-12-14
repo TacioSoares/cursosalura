@@ -22,7 +22,7 @@ function executaRegex(valores) {
 	var resultados	 = [];
     var resultado 	 = null;
 
-
+	var exp = /(\d)(\w)/g
 	var objetoRegex  = new RegExp(textoPattern, 'g');
 
 	while (resultado = objetoRegex.exec(textoTarget)) {
