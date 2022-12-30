@@ -13,13 +13,17 @@ header > .container {
 }
 
 /* Corpo */
+
 .conteudoPrincipal-cursos {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 500px;
 }
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+}
+
+
+
 .rodapePrincipal-navMap-list {
     display: flex;
     flex-direction: column;
