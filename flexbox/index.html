@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Alurinha | Cursos online</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/flexbox.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,13 +17,15 @@
 			<h1 class="cabecalhoPrincipal-titulo">
 				<a href="#">Alurinha</a>
 			</h1>
-
+			<span class="material-symbols-outlined" id="menuHamburguer" onclick="abrirMenu()">
+				menu
+			</span>
 			<nav class="cabecalhoPrincipal-nav">
 				<a class="cabecalhoPrincipal-nav-link" href="#">Home</a>
 				<a class="cabecalhoPrincipal-nav-link" href="#">Cursos</a>
 				<a class="cabecalhoPrincipal-nav-link" href="#">Sobre nós</a>
 				<a class="cabecalhoPrincipal-nav-link" href="#">Contato</a>
-				<a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" href="#">Nosso APP</a>
+				<a class="cabecalhoPrincipal-nav-link cabecalhoPrincipal-nav-link-app" id="app" href="#">Nosso APP</a>
 			</nav>
 		</div>
 
@@ -147,6 +151,15 @@
 			</div>
 		</section>
 	</footer>
-
+	<script>
+		function abrirMenu() {
+			var opcoesMenu = document.querySelector('.cabecalhoPrincipal-nav')
+			if (opcoesMenu.style.display == 'none') {
+				opcoesMenu.style.display = 'flex'
+			} else {
+				opcoesMenu.style.display = 'none'
+			}	
+		}
+	</script>
 </body>
 </html>
