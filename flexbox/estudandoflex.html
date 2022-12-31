@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="elemento1" onmouseenter="crescer(1)" onmouseleave="diminuir(1)"></div>
+        <div id="elemento2" onmouseenter="crescer(2)" onmouseleave="diminuir(2)"></div>
+        <div id="elemento3" onmouseenter="crescer(3)" onmouseleave="diminuir(3)"></div>
+        <div id="elemento4" onmouseenter="crescer(4)" onmouseleave="diminuir(4)"></div>
+    </div>
+    <script>
+        function crescer(n) {
+            var elemento1 = document.querySelector('#elemento1')
+            var elemento2 = document.querySelector('#elemento2')
+            var elemento3 = document.querySelector('#elemento3')
+            var elemento4 = document.querySelector('#elemento4')
+            if (n==1) {
+                elemento1.classList.add('crescer')
+                elemento2.classList.add('diminuir')
+                elemento3.classList.add('diminuir')
+                elemento4.classList.add('diminuir')
+            } else if (n==2) {
+                elemento1.classList.add('diminuir')
+                elemento2.classList.add('crescer')
+                elemento3.classList.add('diminuir')
+                elemento4.classList.add('diminuir')
+            } else if (n==3) {
+                elemento1.classList.add('diminuir')
+                elemento2.classList.add('diminuir')
+                elemento3.classList.add('crescer')
+                elemento4.classList.add('diminuir')
+            } else if (n==4) {
+                elemento1.classList.add('diminuir')
+                elemento2.classList.add('diminuir')
+                elemento3.classList.add('diminuir')
+                elemento4.classList.add('crescer')
+            }
+        }
+        function diminuir(n) {
+            var elemento1 = document.querySelector('#elemento1')
+            var elemento2 = document.querySelector('#elemento2')
+            var elemento3 = document.querySelector('#elemento3')
+            var elemento4 = document.querySelector('#elemento4')
+            if (n == 1) {
+                elemento1.classList.remove('crescer')
+                elemento2.classList.remove('diminuir')
+                elemento3.classList.remove('diminuir')
+                elemento4.classList.remove('diminuir')
+            } else if (n == 2) {
+                elemento1.classList.remove('diminuir')
+                elemento2.classList.remove('crescer')
+                elemento3.classList.remove('diminuir')
+                elemento4.classList.remove('diminuir')
+            } else if (n == 3) {
+                elemento1.classList.remove('diminuir')
+                elemento2.classList.remove('diminuir')
+                elemento3.classList.remove('crescer')
+                elemento4.classList.remove('diminuir')
+            } else if (n == 4) {
+                elemento1.classList.remove('diminuir')
+                elemento2.classList.remove('diminuir')
+                elemento3.classList.remove('diminuir')
+                elemento4.classList.remove('crescer')
+            }   
+            elemento1.classList.add('normal')
+            elemento2.classList.add('normal')
+            elemento3.classList.add('normal')
+            elemento4.classList.add('normal')
+        }
+    </script>
+</body>
+</html>
