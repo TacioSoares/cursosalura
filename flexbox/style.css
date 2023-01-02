@@ -3,7 +3,7 @@
 #container {
     border: 1px solid black;
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     height: 400px;
     align-items: center;
 }
@@ -11,9 +11,9 @@
     width: 45px;
     height: 45px;
     background-color: darkred;
-    border-radius: 50%;
     transition: transform 2s, box-shadow 2s;
     cursor: pointer;
+    flex-grow: 2;
     
 }
 #elemento2 {
@@ -22,22 +22,23 @@
     background-color: darkblue;
     transition: transform 2s, box-shadow 2s;
     cursor: pointer;
+    flex-grow: 1;
 }
 #elemento3 {
     width: 45px;
     height: 45px;
     background-color: darkgreen;
-    border-radius: 50%;
     transition: transform 2s, box-shadow 2s;
     cursor: pointer;
+    flex-grow: 1;
 }
 #elemento4 {
     width: 45px;
     height: 45px;
     background-color: darkgray;
-    border-radius: 50%;
     transition: transform 2s, box-shadow 2s;
     cursor: pointer;
+    flex-grow: 2;
 }
 .crescer {
     transform: scale(2);
@@ -68,4 +69,7 @@
 #elemento4:active {
     transform: scale(0.9);
     box-shadow: none;
+}
+.Item {
+    
 }
