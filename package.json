@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TacioSoares/cursosalura/issues"
   },
-  "homepage": "https://github.com/TacioSoares/cursosalura#readme"
+  "homepage": "https://github.com/TacioSoares/cursosalura#readme",
+  "dependencies": {
+    "jason-server": "^3.0.0"
+  }
 }
