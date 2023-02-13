@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@keyframes identifier {
+    
+}
+header {
+    width: 100vw;
+}
+img {
+    width: 100%;
+}
+.letra-header {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    margin-top: 10%;
+    fill: transparent;
+    animation: letra-preenchimento 0.5s ease-in-out forwards 4s;
+}
+.letra-header path {
+    stroke: #BE253F;
+    stroke-width: 5px;
+    stroke-dashoffset: 3000;
+    stroke-dasharray: 3000;
+    animation: letra-tracado 5s ease-in-out forwards ;
+}
+@keyframes letra-preenchimento {
+    to {
+        fill: #BE253F;
+    }
+}
+@keyframes letra-tracado {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
