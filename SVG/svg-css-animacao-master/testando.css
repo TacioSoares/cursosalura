@@ -6,8 +6,21 @@ body {
     width: 100vw;
 }
 
-@keyframes identifier {
-    
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+    color: #BE253F;
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 1.5em;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    color: #484848;
+    font-size: 1em;
 }
 header {
     width: 100vw;
@@ -41,3 +54,25 @@ img {
         stroke-dashoffset: 1000;
     }
 }
+.container-cards {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+/*.card-esq {
+    display: flex;
+    flex-direction: column;
+    
+}
+.card-dir {
+    display: flex;
+    flex-direction: column;
+    
+}*/
