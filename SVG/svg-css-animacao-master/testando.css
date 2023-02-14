@@ -54,6 +54,16 @@ img {
         stroke-dashoffset: 1000;
     }
 }
+@keyframes movimento-card-esq {
+    from {
+        transform: translate(-200px,0px);
+    }
+}
+@keyframes movimento-card-dir {
+    from {
+        transform: translate(200px,0px);
+    }
+}
 .container-cards {
     width: 80%;
     margin: auto;
@@ -66,13 +76,13 @@ img {
     padding: 20px;
     margin: 20px;
 }
-/*.card-esq {
-    display: flex;
-    flex-direction: column;
-    
+.card-esq {
+    transition: transform ease-in-out;
 }
 .card-dir {
-    display: flex;
-    flex-direction: column;
-    
-}*/
+    transition: transform ease-in-out;
+}
+
+#teste {
+    height: 500px;
+}
