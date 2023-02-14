@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+body {
+    background-color: #FFEAD4;
+    margin: 0px;
+    width: 100vw;
+}
+
 @keyframes identifier {
     
 }
@@ -16,14 +22,14 @@ img {
     width: 70%;
     margin-top: 10%;
     fill: transparent;
-    animation: letra-preenchimento 0.5s ease-in-out forwards 4s;
+    animation: letra-preenchimento 0.5s ease-in-out forwards 7s;
 }
 .letra-header path {
     stroke: #BE253F;
     stroke-width: 5px;
     stroke-dashoffset: 3000;
     stroke-dasharray: 3000;
-    animation: letra-tracado 5s ease-in-out forwards ;
+    animation: letra-tracado 5s ease-in-out forwards 3s ;
 }
 @keyframes letra-preenchimento {
     to {
