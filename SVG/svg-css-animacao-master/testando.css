@@ -86,3 +86,29 @@ img {
 #teste {
     height: 500px;
 }
+
+.lett-footer {
+    width: 60%;
+    fill: white;
+    opacity: 0.7;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    margin-top: 20%;
+}
+.container-footer {
+    position: relative;
+}
+
+
+@keyframes movimento-nuvem-esq {
+    to {
+      transform: translate(-400px)
+    }
+  }
+
+  @keyframes movimento-nuvem-dir {
+    to {
+      transform: translate(400px)
+    }
+  }
