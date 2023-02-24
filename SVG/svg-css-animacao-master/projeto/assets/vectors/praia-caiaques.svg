@@ -235,13 +235,13 @@
 
       @keyframes movimento-nuvem-esq {
         to {
-          transform: translate(-400px)
+          transform: translate(400px)
         }
       }
 
       @keyframes movimento-nuvem-dir {
         to {
-          transform: translate(400px)
+          transform: translate(-400px)
         }
       }
 
